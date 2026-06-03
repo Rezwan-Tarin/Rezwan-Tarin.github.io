@@ -343,6 +343,9 @@
       display: inline-block;
       margin-bottom: 0.25rem;
     }
+    .cred-badge.muted {
+      background: #9ca3af;
+    }
     .cred-title {
       font-size: 0.82rem;
       font-weight: 600;
@@ -483,6 +486,7 @@
         <a href="mailto:Rezwantarin2021@gmail.com">&#9993; Rezwantarin2021@gmail.com</a>
         <a href="https://www.linkedin.com/in/rezwantarin" target="_blank" rel="noopener noreferrer">&#128279; linkedin.com/in/rezwantarin</a>
         <a href="https://rezwan-tarin.github.io" target="_blank" rel="noopener noreferrer">&#127760; rezwan-tarin.github.io</a>
+        <a href="https://github.com/Rezwan-Tarin" target="_blank" rel="noopener noreferrer">&#128025; github.com/Rezwan-Tarin</a>
         <span style="color:rgba(255,255,255,0.65);font-size:0.82rem;">&#128205; Toronto, ON</span>
       </div>
     </div>
@@ -498,7 +502,7 @@
     <!-- Stats -->
     <div class="stats-row">
       <div class="stat-card">
-        <div class="stat-num">3+</div>
+        <div class="stat-num">5+</div>
         <div class="stat-lbl">Years in Enterprise Security</div>
       </div>
       <div class="stat-card">
@@ -519,7 +523,7 @@
     <div class="section">
       <div class="section-title">Summary</div>
       <div class="card summary">
-        <p>I'm an Information Security Specialist with 3+ years of hands-on enterprise security experience. I got my start in finance at TD Bank, where three years of managing sensitive client information under regulatory pressure taught me that real security is about process and trust, not just technology.</p>
+        <p>I'm an Information Security Specialist with 5+ years of hands-on enterprise security experience. I got my start in finance at TD Bank, where three years of managing sensitive client information under regulatory pressure taught me that real security is about process and trust, not just technology.</p>
         <p>That foundation led me to cybersecurity. After completing a Computer Programming Analyst diploma at George Brown College, I joined Teranet Inc. as an Information Security Specialist. Over the past 3+ years I've rolled out Zero Trust, migrated WAF infrastructure for 20+ applications, replaced the SIEM and EDR stack, built AI governance standards, and pushed phishing awareness from 88% to 98%.</p>
       </div>
     </div>
@@ -538,7 +542,7 @@
                 <div class="tl-company">Teranet Inc.</div>
               </div>
               <div class="tl-meta">
-                <span class="tl-date">3+ Years</span>
+                <span class="tl-date">Oct 2022 – Present</span>
                 <span class="tl-location">Toronto, ON</span>
               </div>
             </div>
@@ -563,7 +567,7 @@
                 <div class="tl-company">TD Bank</div>
               </div>
               <div class="tl-meta">
-                <span class="tl-date">3 Years</span>
+                <span class="tl-date">Aug 2019 – Oct 2022</span>
                 <span class="tl-location">Toronto, ON</span>
               </div>
             </div>
@@ -571,6 +575,8 @@
               <ul>
                 <li>Managed sensitive client information under strict regulatory and compliance standards.</li>
                 <li>Identified fraud risks and escalated suspicious activity following internal escalation procedures.</li>
+                <li>Applied AML and KYC procedures during client onboarding and account reviews, identifying red flags and escalating cases through the appropriate compliance channels.</li>
+                <li>Collaborated with internal compliance teams to ensure branch-level adherence to regulatory requirements and audit-ready documentation practices.</li>
               </ul>
             </div>
           </div>
@@ -661,13 +667,13 @@
 
         <div class="proj-card">
           <div class="proj-top">
-            <div class="proj-title">SIEM &amp; VM Replacement &mdash; Rapid7 &rarr; Jolear, Qualys &amp; Elastic</div>
+            <div class="proj-title">SIEM &amp; VM Replacement &mdash; Rapid7 &rarr; Jolera, Qualys &amp; Elastic</div>
             <span class="proj-cat">SIEM &amp; Vuln. Management</span>
           </div>
-          <p class="proj-desc">Replaced Rapid7 InsightIDR/InsightVM with a modern stack: Jolear for SIEM and detection, Qualys for vulnerability management, and Elastic Agent for log collection. Built new detection rules and dashboards from scratch.</p>
+          <p class="proj-desc">Replaced Rapid7 InsightIDR/InsightVM with a modern stack: Jolera for SIEM and detection, Qualys for vulnerability management, and Elastic Agent for log collection. Built new detection rules and dashboards from scratch.</p>
           <div class="proj-tags">
             <span class="proj-tag">Rapid7</span>
-            <span class="proj-tag">Jolear SIEM</span>
+            <span class="proj-tag">Jolera SIEM</span>
             <span class="proj-tag">Qualys</span>
             <span class="proj-tag">Elastic Agent</span>
             <span class="proj-tag">Vulnerability Management</span>
@@ -735,6 +741,7 @@
             <span class="skill-tag">ServiceNow</span>
             <span class="skill-tag">Jira</span>
             <span class="skill-tag">Confluence</span>
+            <span class="skill-tag">Executive Reporting</span>
           </div>
         </div>
 
@@ -758,7 +765,6 @@
             <span class="skill-tag">Linux</span>
             <span class="skill-tag">Entrust</span>
             <span class="skill-tag">Sectigo</span>
-            <span class="skill-tag">Executive Reporting</span>
           </div>
         </div>
 
@@ -785,17 +791,10 @@
         </div>
 
         <div class="cred-item">
-          <span class="cred-badge">Diploma</span>
+          <span class="cred-badge muted">Diploma</span>
           <div class="cred-title">Computer Programming Analyst</div>
           <div class="cred-org">George Brown College &mdash; Toronto, ON</div>
           <div class="cred-date">May 2021</div>
-        </div>
-
-        <div class="cred-item">
-          <span class="cred-badge">High School</span>
-          <div class="cred-title">Ontario Secondary School Diploma</div>
-          <div class="cred-org">Central Technical High School &mdash; Toronto, ON</div>
-          <div class="cred-date">June 2018</div>
         </div>
 
       </div>
@@ -839,61 +838,77 @@
 (function () {
   const canvas = document.getElementById('bg-canvas');
   const ctx    = canvas.getContext('2d');
-  const COUNT  = 72;
-  const DIST   = 145;
-  let particles = [];
+  const COUNT  = 48;
+  const DIST   = 170;
+  let pts = [];
+
+  function makePt() {
+    return {
+      x:  Math.random() * canvas.width,
+      y:  Math.random() * canvas.height,
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: (Math.random() - 0.5) * 0.4
+    };
+  }
 
   function resize() {
     canvas.width  = window.innerWidth;
     canvas.height = window.innerHeight;
   }
 
-  function makeParticle() {
-    return {
-      x:  Math.random() * canvas.width,
-      y:  Math.random() * canvas.height,
-      vx: (Math.random() - 0.5) * 0.55,
-      vy: (Math.random() - 0.5) * 0.55,
-      r:  Math.random() * 1.5 + 1
-    };
-  }
-
   function init() {
     resize();
-    particles = Array.from({ length: COUNT }, makeParticle);
+    pts = Array.from({ length: COUNT }, makePt);
   }
 
   function draw() {
     ctx.fillStyle = '#f0f4f8';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    for (let i = 0; i < particles.length; i++) {
-      const a = particles[i];
-      a.x += a.vx;
-      a.y += a.vy;
-      if (a.x < 0 || a.x > canvas.width)  a.vx *= -1;
-      if (a.y < 0 || a.y > canvas.height) a.vy *= -1;
+    for (const p of pts) {
+      p.x += p.vx;
+      p.y += p.vy;
+      if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+    }
 
-      ctx.beginPath();
-      ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(74,111,165,0.75)';
-      ctx.fill();
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = i + 1; j < pts.length; j++) {
+        const dx1 = pts[i].x - pts[j].x, dy1 = pts[i].y - pts[j].y;
+        const d1  = Math.sqrt(dx1 * dx1 + dy1 * dy1);
+        if (d1 > DIST) continue;
 
-      for (let j = i + 1; j < particles.length; j++) {
-        const b  = particles[j];
-        const dx = a.x - b.x;
-        const dy = a.y - b.y;
-        const d  = Math.sqrt(dx * dx + dy * dy);
-        if (d < DIST) {
+        for (let k = j + 1; k < pts.length; k++) {
+          const dx2 = pts[i].x - pts[k].x, dy2 = pts[i].y - pts[k].y;
+          const d2  = Math.sqrt(dx2 * dx2 + dy2 * dy2);
+          if (d2 > DIST) continue;
+
+          const dx3 = pts[j].x - pts[k].x, dy3 = pts[j].y - pts[k].y;
+          const d3  = Math.sqrt(dx3 * dx3 + dy3 * dy3);
+          if (d3 > DIST) continue;
+
+          const alpha = (1 - Math.max(d1, d2, d3) / DIST) * 0.07;
           ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(b.x, b.y);
-          ctx.strokeStyle = `rgba(74,111,165,${(1 - d / DIST) * 0.22})`;
-          ctx.lineWidth = 0.8;
+          ctx.moveTo(pts[i].x, pts[i].y);
+          ctx.lineTo(pts[j].x, pts[j].y);
+          ctx.lineTo(pts[k].x, pts[k].y);
+          ctx.closePath();
+          ctx.fillStyle   = `rgba(74,111,165,${alpha.toFixed(3)})`;
+          ctx.fill();
+          ctx.strokeStyle = `rgba(74,111,165,${(alpha * 2.5).toFixed(3)})`;
+          ctx.lineWidth   = 0.6;
           ctx.stroke();
         }
       }
     }
+
+    for (const p of pts) {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 1.8, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(74,111,165,0.55)';
+      ctx.fill();
+    }
+
     requestAnimationFrame(draw);
   }
 
